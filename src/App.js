@@ -9,6 +9,7 @@ import './App.css';
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/NavBar';
 import Footer from "./components/Footer";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             </Routes>
           <Footer />
         </Router>
+        <Register />
       </div>
       
   );
