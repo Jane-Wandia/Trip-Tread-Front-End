@@ -10,6 +10,8 @@ import './App.css';
 import Navbar from './components/NavBar';
 import Footer from "./components/Footer";
 import Register from "./components/Register";
+import Airline from "./components/Airline";
+import ReviewForm from "./components/ReviewForm";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
               <Route path='/components/Reviews' element={<Reviews/>} />
               <Route path='/components/Contact' element={<Contact/>} />
               <Route path='/components/Register' element={<Register/>}/>
+              <Route path='/components/Airline' element={<Airline/>}/>
+              <Route path='/components/ReviewForm' element={<ReviewForm/>}/>
             </Routes>
           <Footer />
         </Router>
