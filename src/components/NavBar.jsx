@@ -12,13 +12,8 @@ const Navbar = () => {
     <>
       <Nav>
         <NavMenu className='navList'>
-        <header>
-        <div className="container container-flex">
-            {/* <div className="logoContainer">
-                <img src={logo} alt ="logo" className='logo'/>
-            </div> */}
-        </div>
-        </header>
+      
+        
           <NavLink to='/'>
             Home
           </NavLink>
