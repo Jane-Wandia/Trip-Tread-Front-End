@@ -1,21 +1,24 @@
-import React from 'react'
+import React from "react";
 import "./CSS/ReviewForm.css";
 
 function ReviewForm() {
   return (
-    <div className='myDiv'>
-        <h1>got feedback?</h1>
-        <i className='fa fa-comments-o fa-5x'></i>
-        <br></br>
-        <div className='form-group'>
-            <label for="trip">trip:</label>
-            <input className='form-control' rows='1' id='username' type='text' placeholder='Your trip?'></input>
-            <br></br>
-            <label for="comment:"></label>
-        </div>
-        
-        </div>
-  )
+    <div className="myDiv">
+    <form>
+      <h1>got feedback?</h1>
+      <div className="id">
+       <input type="text" placeholder="your trip"></input>
+       
+      </div>
+
+      <div className="id">
+       <input type="text" placeholder="comments"></input>
+       <textarea placeholder="Leave a comment here..."></textarea>
+       <button>Submit</button>
+      </div>
+    </form>
+    </div>
+  );
 }
 
-export default ReviewForm
+export default ReviewForm;
