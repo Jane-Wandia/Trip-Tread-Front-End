@@ -20,7 +20,7 @@ function Login() {
           Submit
         </button>
       </form>
-      <a href="#" className="link-btn">Don't have an account? Register here.</a>
+      <a href='/components/Register' className="link-btn">Don't have an account? Register here.</a>
     </div>
   );
 
