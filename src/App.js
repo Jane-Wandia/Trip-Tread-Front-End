@@ -28,7 +28,7 @@ function App() {
               <Route path='/components/Airline' element={<Airline/>}/>
               <Route path='/components/ReviewForm' element={<ReviewForm/>}/>
             </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
         
       </div>
