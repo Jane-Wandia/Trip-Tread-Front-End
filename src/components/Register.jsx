@@ -3,7 +3,7 @@ import "./CSS/Register.css";
 
 function Register({setShowLogIn, onLogIn}) {
   const [myForm, setMyForm] = useState({
-    username: "",
+    fullname: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -25,15 +25,14 @@ function Register({setShowLogIn, onLogIn}) {
   
   function handleSubmit(e) {
     e.preventDefault();
+    console.log(myForm)
     
     fetch("/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-       myForm
-      }),
+      body: JSON.stringify(myForm),
     }).then((r) => {
      
       if (r.ok) {
@@ -55,7 +54,7 @@ function Register({setShowLogIn, onLogIn}) {
               type="text"
               id="username"
               placeholder="Enter username"
-              name="username"
+              name="fullname"
               onChange={onChangeBinder}
             />
             <small>Error message</small>
