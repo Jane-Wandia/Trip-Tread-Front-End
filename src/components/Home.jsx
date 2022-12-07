@@ -9,12 +9,11 @@ function Home(props) {
       </video>
       <div className='content'>
             <h2>Welcome to Trip Tread</h2>
-            
              <button className="link-btn" onClick={() => props.onFormSwitch('Home')}>Go to Airlines</button>
       </div>
     </div>
 
-   
+
   )
 }
 export default Home;
