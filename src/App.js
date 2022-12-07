@@ -16,14 +16,14 @@ function App() {
   const [user, setUser] = useState(null);
   const [showLogin, setShowLogin] = useState(true);
 
-  // useEffect(() => {
+  useEffect(() => {
   
-  //   fetch("/me").then((r) => {
-  //     if (r.ok) {
-  //       r.json().then((user) => setUser(user));
-  //     }
-  //   });
-  // }, []);
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
 
   if (!user) return <LogInForm onLogIn={setUser} />;
 

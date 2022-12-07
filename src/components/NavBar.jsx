@@ -22,18 +22,12 @@ const Navbar = () => {
           <NavLink to='/'>
             Home
           </NavLink>
-          <NavLink to='/components/Login'>
-            Login
-          </NavLink>
+          
           <NavLink to='/components/About'>
             About Us
           </NavLink>
-          <NavLink to='/components/Reviews'>
-            Reviews
-          </NavLink>
-          <NavLink to='/components/Contact'>
-            Contact
-          </NavLink>
+          
+          
         </NavMenu>
       </Nav>
     </>
