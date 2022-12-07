@@ -9,6 +9,7 @@ import './App.css';
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/NavBar';
 import Footer from "./components/Footer";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -21,9 +22,11 @@ function App() {
               <Route path='/components/About' element={<About/>} />
               <Route path='/components/Reviews' element={<Reviews/>} />
               <Route path='/components/Contact' element={<Contact/>} />
+              <Route path='/components/Register' element={<Register/>}/>
             </Routes>
           <Footer />
         </Router>
+        
       </div>
       
   );
