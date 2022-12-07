@@ -5,17 +5,17 @@ function ReviewForm() {
   return (
     <div className="myDiv">
     <form>
-      <h1>got feedback?</h1>
-      <div className="id">
-       <input type="text" placeholder="your trip"></input>
-       
-      </div>
+      <h1>Got Feedback?</h1>
+        <label for="trip">your trip:</label>
+       <input type="text" placeholder="Enter your trip.."></input>
 
-      <div className="id">
-       <input type="text" placeholder="comments"></input>
+       <label for="comment">comment:</label>
        <textarea placeholder="Leave a comment here..."></textarea>
+
+       <label for="comment">Rate:</label>
+       <input type="range" min="1" max="5" name="rating" id="rating" />
+
        <button>Submit</button>
-      </div>
     </form>
     </div>
   );
