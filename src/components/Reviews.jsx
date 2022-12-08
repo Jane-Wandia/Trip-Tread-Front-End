@@ -38,16 +38,12 @@ function Reviews({handleEdit}) {
       headers: {
         'Content-type': 'application/json'
       }, body: JSON.stringify(patch)
-    }).then(res => res.json())
-  
-  
-    
+    })
+    .then(res => res.json())
+    .then(res => setReviews([...res]))
   }
 
-  function spread(data) {
-    setReviews([...reviews, data])
-   
-  }
+  
    
   
 
