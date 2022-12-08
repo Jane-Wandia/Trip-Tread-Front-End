@@ -39,7 +39,8 @@ function Register({setShowLogIn, onLogIn}) {
       if (r.ok) {
         r.json().then((user) => onLogIn(user));
       } else {
-        r.json().then((err) => console.log(err));
+        r.json().then((err) => alert(err.error));
+        
       }
     });
   }

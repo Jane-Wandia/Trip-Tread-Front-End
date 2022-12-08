@@ -32,7 +32,8 @@ function Login({ onLogIn }) {
         r.json().then((user) => onLogIn(user));
 
       } else {
-        r.json().then((err) => setErrors({error:err["error"]}));
+        r.json().then((err) => alert(err.error));
+        
       
       }
     });

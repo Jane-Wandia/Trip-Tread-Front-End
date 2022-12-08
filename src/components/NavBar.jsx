@@ -8,7 +8,14 @@ import {
 import './CSS/NavBar.css'
 // import logo from '../components/images/logo.jpg'
   
-const Navbar = () => {
+const Navbar = ({setUser}) => {
+  function handleLogoutClick() {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
+      if (r.ok) {
+        setUser(null);
+      }
+    });
+  }
   return (
     <Nav className='navbar'>
         <NavMenu className='navList'>
@@ -17,7 +24,7 @@ const Navbar = () => {
             <NavLink to='/'>
               Home
             </NavLink>
-            <NavLink to='/components/Login'>
+            <NavLink onClick={handleLogoutClick}>
               Log Out
             </NavLink>
             <NavLink to='/components/About'>
