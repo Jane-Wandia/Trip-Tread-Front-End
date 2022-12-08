@@ -10,7 +10,7 @@ function Home(props) {
       </video>
       <div className='content'>
             <h2>Welcome to Trip Tread</h2>
-            <Link to="/home">
+            <Link to='/components/home'>
              <button className="link-btn">Go to Airlines</button>
              </Link>
 

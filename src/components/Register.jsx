@@ -7,7 +7,7 @@ function Register({setShowLogIn, onLogIn}) {
     fullname: "",
     email: "",
     password: "",
-    confirmPassword: "",
+    password_confirmation: "",
   });
   const [errors, setErrors] = useState({
     error: "",
@@ -89,7 +89,7 @@ function Register({setShowLogIn, onLogIn}) {
               type="password"
               id="password"
               placeholder="Confirm password"
-              name="confirmPassword"
+              name="password_confirmation"
               onChange={onChangeBinder}
             />
             <small>Error message</small>
