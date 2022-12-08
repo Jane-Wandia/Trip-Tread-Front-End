@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&display=swap');
 .footer {
+	color: black;
 	display: flex;
+	background-color: #1f71aa;
+	height: 10vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+  }
+  
+  .section1{
 	margin: 0;
 	justify-content: space-between;
 	padding-right: 10px;
@@ -38,19 +52,11 @@ a {
 
 .mapouter {
 	position: relative;
-	text-align: right;
-	height: 200px;
-	width: 300px;
-}
-
-.gmap_canvas {
-	overflow: hidden;
-	background: none !important;
-	height: 200px;
-	width: 300px;
-	border-radius: 20px;
-}
-a {
-	text-decoration: none;
-}
-@import url('https://css.gg/minimize.css');
+	align-items: center;
+	text-align: center;
+	justify-content: center !important;
+	padding: 2px;
+	gap: 25px;
+	display: flex !important;
+	margin-left: 2px;
+  }
