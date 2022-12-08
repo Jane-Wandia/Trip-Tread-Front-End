@@ -6,8 +6,8 @@ function Login() {
 
 
     <div className="login-box">
+      <form className="form">
       <h2>Login</h2>
-      <form>
         <div className="user-box">
           <input type="text" name="" required=""></input>
           <label>Username</label>
@@ -19,8 +19,8 @@ function Login() {
         <button className="submit-btn" type="submit">
           Submit
         </button>
-      </form>
       <a href='/components/Register' className="link-btn">Don't have an account? Register here.</a>
+      </form>
     </div>
   );
 
