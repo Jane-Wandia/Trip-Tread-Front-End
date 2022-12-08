@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: #1258da;
+}
+
+.navList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_links {
+
+    display: flex;
+    justify-content: left;
+    /* justify-content: space-between; */
+    width: 60%;
+}

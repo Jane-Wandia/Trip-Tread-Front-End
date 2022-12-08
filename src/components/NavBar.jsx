@@ -1,37 +1,31 @@
 import React from 'react';
-import './CSS/NavBar.css'
-// import logo from '../components/images/logo.jpg'
 import {
   Nav,
   NavLink,
   NavMenu,
 } from './NavBarElements';
+
+import './CSS/NavBar.css'
+// import logo from '../components/images/logo.jpg'
   
 const Navbar = () => {
   return (
-    <>
-      <Nav>
+    <Nav className='navbar'>
         <NavMenu className='navList'>
-      
-        
-          <NavLink to='/'>
-            Home
-          </NavLink>
-          <NavLink to='/components/Login'>
-            Login
-          </NavLink>
-          <NavLink to='/components/About'>
-            About Us
-          </NavLink>
-          <NavLink to='/components/Reviews'>
-            Reviews
-          </NavLink>
-          <NavLink to='/components/Contact'>
-            Contact
-          </NavLink>
+         <h3 className='logo'>Trip Tread </h3>
+          <div className='nav_links'>
+            <NavLink to='/'>
+              Home
+            </NavLink>
+            <NavLink to='/components/Login'>
+              Log Out
+            </NavLink>
+            <NavLink to='/components/About'>
+              About Us
+            </NavLink>
+          </div>
         </NavMenu>
-      </Nav>
-    </>
+    </Nav>
   );
 };
   

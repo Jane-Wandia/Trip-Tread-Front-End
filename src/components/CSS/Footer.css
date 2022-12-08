@@ -15,6 +15,43 @@
   }
   
   .section1{
+	margin: 0;
+	justify-content: space-between;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	background-color: #000000;
+    color: var(--theme-footer-text-color);
+	height: auto;
+	color: aliceblue;
+}
+ul, li {
+    margin: 2px;
+    margin-top: 4px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    padding: 2px;
+}
+
+a {
+    color: #03e9f4;
+}
+
+.icons img{
+	padding: 2px 2px 2px 2px;
+	display: inline-block;
+	box-sizing: border-box;
+    height: 50px;
+    background-size: 100% 100%;
+}
+
+.icons :hover {
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+.mapouter {
 	position: relative;
 	align-items: center;
 	text-align: center;
