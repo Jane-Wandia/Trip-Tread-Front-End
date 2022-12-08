@@ -1,13 +1,20 @@
+
 import React, { useState } from "react";
 import "./CSS/Register.css";
 
-function Register() {
+function Register({setShowLogIn, onLogIn}) {
   const [myForm, setMyForm] = useState({
-    username: "",
+    fullname: "",
     email: "",
     password: "",
     confirmPassword: "",
   });
+  const [errors, setErrors] = useState({
+    error: "",
+    
+  });
+
+  
 
   const onChangeBinder = (e) => {
     setMyForm((myForm) => ({
@@ -15,11 +22,33 @@ function Register() {
       [e.target.name]: e.target.value,
     }));
   };
-  console.log(myForm)
+  
+  
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(myForm)
+    
+    fetch("/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(myForm),
+    }).then((r) => {
+     
+      if (r.ok) {
+        r.json().then((user) => onLogIn(user));
+      } else {
+        r.json().then((err) => alert(err.error));
+        
+      }
+    });
+  }
+
   return (
     <>
       <div className="container">
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <h2>Hey friend, you gotta register!</h2>
           <div className="form-control">
             <label for="username">Username</label>
@@ -27,7 +56,7 @@ function Register() {
               type="text"
               id="username"
               placeholder="Enter username"
-              name="username"
+              name="fullname"
               onChange={onChangeBinder}
             />
             <small>Error message</small>
@@ -67,6 +96,13 @@ function Register() {
           </div>
           <button type="submit">Submit</button>
         </form>
+          <p>
+              Already have an account?
+              <button  onClick={() => setShowLogIn(true)}>
+                Log In
+              </button>
+          </p>
+        
       </div>
     </>
   );

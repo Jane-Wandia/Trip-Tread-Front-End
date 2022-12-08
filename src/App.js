@@ -17,14 +17,27 @@ import ReviewForm from "./components/ReviewForm";
 
 function App() {
 
+  const [user, setUser] = useState(null);
+  const [showLogin, setShowLogin] = useState(true);
+
+  useEffect(() => {
+  
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+  if (!user) return <Login onLogIn={setUser} />;
   
   return (
       <div>
         <Router>
-          <Navbar />
+          <Navbar user={user} setUser={setUser} />
             <Routes>
               <Route path='/' element={<Home/>} />
-              <Route path='/components/Login' element={<Login/>} />
+              
               <Route path='/home' element={<Airline />} />
               <Route path='/components/About' element={<About/>} />
               <Route path='/components/Reviews' element={<Reviews />} />
