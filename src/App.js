@@ -24,7 +24,7 @@ function App() {
               <Route path='/components/Contact' element={<Contact/>} />
               <Route path='/components/home/Go to Airlines' element={<About/>} />
             </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </div>
       
