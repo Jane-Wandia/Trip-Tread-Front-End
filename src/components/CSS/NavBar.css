@@ -1,22 +1,55 @@
-.navbar {
+.navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.6rem;
+    font-size: 12px;
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 1rem;
-    background-color: #1258da;
+    align-items: center;
+    background: #1f71aa;
 }
-
-.navList {
-    width: 100%;
+.navbar-brand {
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+  .navbar-brand h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+  .navbar-brand h2 span {
+    color: white;
+  }
+  .navbar-nav {
+    width: 40%;
     display: flex;
-    justify-content: space-between;
-}
-
-.nav_links {
-
+    justify-content: flex-end;
+  }
+  .navbar-nav > ul {
     display: flex;
-    justify-content: left;
-    /* justify-content: space-between; */
-    width: 60%;
-}
+    align-items: center;
+    list-style: none;
+  }
+
+
+  .navbar-nav > ul > li {
+    padding: 0.6rem;
+    margin-right: 1.4rem;
+  }
+
+.navbar-nav > ul > li > a {
+    color: white;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+  }
+  .navbar-nav > ul > li .active {
+    background-color: black;
+  }
+  .navbar-nav > ul > li .active,
+  .navbar-nav > ul > li:hover > a {
+    background-color: white;
+    color: #1f71aa;
+     }
+
