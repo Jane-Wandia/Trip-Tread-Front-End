@@ -58,7 +58,7 @@ const Navbar = ({setUser}) => {
               <NavLink onClick={handleLogoutClick}>LogOut</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to='/components/About'>About</NavLink>
             </li>
         </ul>
       </div>
