@@ -1,15 +1,32 @@
 import React from 'react'
 import './CSS/Home.css'
+import { TypeAnimation} from 'react-type-animation'
 
 function Home(props) {
   return (
-    <div className='home'>
-      <video autoPlay loop muted></video>
-      <video src="https://res.cloudinary.com/dx3m4nqgs/video/upload/v1670411211/Pexels_Videos_2823622_egsazv.mp4">
-      </video>
-      <div className='content'>
-            <h2>Welcome to Trip Tread</h2>
+    <div className='home-container'>
+    
+      <div className='heading-container'>
+            <h2>
+            <TypeAnimation
+            sequence={[
+              'WANT',
+              1000,
+              'TO',
+              1000,
+              'FLY',
+              1000,
+            ]}
+            cursor={false}
+            wrapper='div'
+            className='home-animation'
+            easing='ease-in-out'
+            repeat={2}
+          />
+            </h2>
+            <div>
              <button className="link-btn" onClick={() => props.onFormSwitch('Home')}>Go to Airlines</button>
+            </div>
       </div>
     </div>
 
