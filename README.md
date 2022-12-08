@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# TRIP TREAD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Trip Tread airline review website is an independent clients forum, which has become a leading review platform. After travelling using a certain airline, the user/client is able to come back and give feedback based on thier experiences during their travel.
 
-## Available Scripts
+# Authors 
 
-In the project directory, you can run:
+1. Jane Kigenyi [Scrum Master, Backend Developer]
 
-### `npm start`
+2. Ronald Kipchirchir [Fronted Developer, Documentation]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Cynthia Chelangat [Frontend Developer]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Muriithi Kibata [Backend Developer]
 
-### `npm test`
+5. David Githonga [Backend Developer]
+ 
+6. Shantel Risper [Frontend Developer]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installing / Getting Started
 
-### `npm run build`
+## Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+->Reactjs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+->Ruby on Rails
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites
 
-### `npm run eject`
+Ensure you have ruby version(2.7.4, 3.0.0)  and Nodejs installed in your machine(pc,laptop)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+run: npm install to install all the dependencies and bundle install for backend dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Use postman to test the endpoints
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Setting up Dev
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Clone this repository to your machine :
 
-## Learn More
+ git clone: [https://github.com/Jane-Wandia/Trip-Tread-Front-End](https://github.com/Jane-Wandia/Trip-Tread-Front-End)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ cd Trip-Tread-Front-End
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Interactivity with the user
 
-### Code Splitting
+One is able to go through our webpage , login/register.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Also you will be able to make order of flights
 
-### Analyzing the Bundle Size
+As a user you can make reviews, comment and also send us feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can contact the developers and also contribution is allowed under agreed terms and conditions.
+# Support or Contribution
 
-### Making a Progressive Web App
+Want to contribute? Great!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For any suggestions or contributions please do not hesitate to contact the owners of this repository.
 
-### Advanced Configuration
+Contributions to this project are welcomed by all, If you need to contribute 
+please  contact us send your github profile to be allowed access.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ 
+  * Fork the repo
+  * Create a new branch (git checkout -b improve-feature)
+  * Make the appropriate changes in the files
+  * Add changes to reflect the changes made
+  * Commit your changes (git commit -am 'Improve feature')
+  * Push to the branch (git push origin improve-feature)
+  * Create a Pull Request
 
-### Deployment
+-Note when making contributions, please endeavour to follow good coding practice.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Contacts Us.
 
-### `npm run build` fails to minify
+Below you will find our contact information:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+WhatsApp; +254702233145
+
+Call / Message; +254111310907
+
+E-mail; ronaldcheruiyot342@gmail.com
+
+Fax; +1(001122698791)
+
+# Others
+
+LinkedIn - [Ronald Kipchirchir](https://www.linkedin.com/in/ronald-kipchirchir-034983246/)
+
+Twitter - [@RonaahB](https://twitter.com/RonaahB)
+
+[Go Back to the Top](https://github.com/Jane-Wandia/Trip-Tread-Front-End)
+
+# Licence
+
+MIT License
+
+Copyright (c) [2021] [Ronald Kipchirchir]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[Go Back to the Top](https://github.com/Jane-Wandia/Trip-Tread-Front-End)
