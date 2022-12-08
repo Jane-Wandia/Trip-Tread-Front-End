@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./CSS/Home.css";
+import {Link} from 'react-router-dom';
 
 function Home(props) {
   return (
@@ -30,7 +31,7 @@ function Home(props) {
           >
             Go to Airlines
           </button> */}
-          <Link to="/home">
+          <Link to="/components/home">
              <button className="link-btn">Go to Airlines</button>
              </Link>
         </div>
