@@ -1,5 +1,6 @@
 import React from 'react'
 import './CSS/Home.css'
+import {Link} from 'react-router-dom';
 
 function Home(props) {
   return (
@@ -9,7 +10,10 @@ function Home(props) {
       </video>
       <div className='content'>
             <h2>Welcome to Trip Tread</h2>
-             <button className="link-btn" onClick={() => props.onFormSwitch('Home')}>Go to Airlines</button>
+            <Link to="/home">
+             <button className="link-btn">Go to Airlines</button>
+             </Link>
+
       </div>
     </div>
 
