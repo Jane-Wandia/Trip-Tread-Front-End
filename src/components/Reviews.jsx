@@ -40,14 +40,7 @@ function Reviews({handleEdit}) {
       }, body: JSON.stringify(patch)
     })
     .then(res => res.json())
-    .then(res => {
-      let data = [...res]
-      setReviews(updated=>data)
-      setPatch("")
-    })
-  
-  
-    
+    .then(res => setReviews([...res]))
   }
 
   
