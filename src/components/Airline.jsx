@@ -1,23 +1,22 @@
 import React from "react";
+import Reviews from "./Reviews";
 import { Link } from "react-router-dom";
 import "./CSS/Airline.css";
 import { useState, useEffect } from "react";
-function Airline() {
+function Airline({handleClick}) {
   const [airline, setAirline] = useState();
+  const [renderProp, setRenderProp] = useState(true)
   useEffect(() => {
     fetch("/airlines")
       .then((r) => r.json())
       .then((res) => setAirline(res));
   }, []);
   console.log(airline);
-  // console.log(airline)
-  // {errors.length > 0 && (
-  //   <ul style={{color: "red"}}>
-  //     {errors && errors.map((item) => (
-  //       <li key={item}>{item}</li>
-  //     ))}
-  //   </ul>
-  // )}
+
+  // function handleClick(e) {
+  //   console.log(e.currentTarget.id);
+    
+  // }
 
   return (
     <div className="airline-container">
@@ -30,10 +29,12 @@ function Airline() {
             <h3>{item.name}</h3>
             <h4 class="iew">Reviews</h4>
             <Link to="/components/Reviews">
-              <button class="btn">Reviews</button>
+              <button type="submit" id={item.id} class="btn"onClick={handleClick}>Reviews</button>
             </Link>
+            
           </div>
         ))}
+    
     </div>
   );
 }
