@@ -24,12 +24,15 @@ function Home(props) {
           deserunt mollit anim id est laborum.
         </p>
         <div>
-          <button
+          {/* <button
             className="link-btn"
             onClick={() => props.onFormSwitch("Home")}
           >
             Go to Airlines
-          </button>
+          </button> */}
+          <Link to="/home">
+             <button className="link-btn">Go to Airlines</button>
+             </Link>
         </div>
       </div>
     </div>
