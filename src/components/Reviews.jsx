@@ -12,7 +12,7 @@ function Reviews({user}) {
   const [reviews, setReviews] = useState([]);
   const [airline, setAirline] = useState({});
   const location = useLocation()
-  const { airline_id } = location.state
+  const { airline_id } = location.state 
 
   function handleUpdate(e) {
     e.preventDefault()
