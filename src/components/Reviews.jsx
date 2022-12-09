@@ -22,7 +22,20 @@ function Reviews({user}) {
         'Content-type': 'application/json'
       }, body: JSON.stringify(patch)
     })
-    .then(getUpdates())
+    .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        console.log(user)
+        
+        setAirline(data)
+        if (data.reviews !== undefined) {
+          
+          setReviews(data.reviews)
+        }
+        else {
+          setReviews([])
+        }
+      });
   }
 
   function handleDelete(id) {
@@ -33,21 +46,23 @@ function Reviews({user}) {
     });
   }
 
-  function getUpdates() {
-    fetch(`/airlines/${airline_id}`)
-    .then((res) => res.json())
-    .then((data) => {
+  // function getUpdates() {
+  //   fetch(`/airlines/${airline_id}`)
+  //   .then((res) => res.json())
+  //   .then((data) => {
+  //     console.log(data)
+  //     console.log(user)
       
-      setAirline(data)
-      if (data.reviews !== undefined) {
+  //     setAirline(data)
+  //     if (data.reviews !== undefined) {
         
-        setReviews(data.reviews)
-      }
-      else {
-        setReviews([])
-      }
-    });
-  }
+  //       setReviews(data.reviews)
+  //     }
+  //     else {
+  //       setReviews([])
+  //     }
+  //   });
+  // }
 
 
 
