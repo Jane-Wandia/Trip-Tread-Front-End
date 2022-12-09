@@ -53,7 +53,7 @@
   
   .primary-container{
     width: 90vw;
-    background-color: #0A46E4;
+    background-color: white;
     position: relative;
     left: 55px;
     min-height: fit-content;
@@ -64,10 +64,11 @@
   }
 
   .input1{
-    width: 200px;
+    width: 1000px;
     height: 50px;
     position: relative;
     /* bottom: 490px; */
+    background-color: #fff;
   }
 
   .form1{
