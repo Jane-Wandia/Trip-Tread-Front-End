@@ -31,7 +31,7 @@ function Home(props) {
           >
             Go to Airlines
           </button> */}
-          <Link to="/components/home">
+          <Link to="/components/Home">
              <button className="link-btn">Go to Airlines</button>
              </Link>
         </div>
