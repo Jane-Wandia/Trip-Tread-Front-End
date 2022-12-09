@@ -8,10 +8,10 @@
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	position: fixed;
+	/* position: fixed;
 			left: 0;
 			bottom: 0;
-			right: 0;
+			right: 0; */
   }
   
   .section1{

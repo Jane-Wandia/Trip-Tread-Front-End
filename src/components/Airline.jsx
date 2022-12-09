@@ -3,9 +3,9 @@ import Reviews from "./Reviews";
 import { Link } from "react-router-dom";
 import "./CSS/Airline.css";
 import { useState, useEffect } from "react";
-function Airline({handleClick}) {
+function Airline({ handleClick }) {
   const [airline, setAirline] = useState();
-  const [renderProp, setRenderProp] = useState(true)
+  const [renderProp, setRenderProp] = useState(true);
   useEffect(() => {
     fetch("/airlines")
       .then((r) => r.json())
@@ -15,7 +15,7 @@ function Airline({handleClick}) {
 
   // function handleClick(e) {
   //   console.log(e.currentTarget.id);
-    
+
   // }
 
   return (
@@ -29,12 +29,17 @@ function Airline({handleClick}) {
             <h3>{item.name}</h3>
             <h4 class="iew">Reviews</h4>
             <Link to="/components/Reviews">
-              <button type="submit" id={item.id} class="btn"onClick={handleClick}>Reviews</button>
+              <button
+                type="submit"
+                id={item.id}
+                className="btn"
+                onClick={handleClick}
+              >
+                Reviews
+              </button>
             </Link>
-            
           </div>
         ))}
-    
     </div>
   );
 }

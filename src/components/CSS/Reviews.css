@@ -52,12 +52,14 @@
   }
   
   .primary-container{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 90vw;
     background-color: #0A46E4;
     position: relative;
     left: 55px;
     min-height: fit-content;
-    justify-content: center;
 
   }
 
