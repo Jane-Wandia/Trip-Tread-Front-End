@@ -6,7 +6,7 @@ function AirlineCard ({airline}) {
     const airline_id = airline.id
 
     return (
-        <div class="card">
+        <div className="card">
             <img id="my-img-uniq" src={airline.image} alt="image not found" />
             <h3>{airline.name}</h3>
             <h4 class="iew">Reviews</h4>
