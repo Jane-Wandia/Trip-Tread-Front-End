@@ -137,6 +137,19 @@ function Reviews({user}) {
           </>
 }
           </div>))}
+          <div className="myDiv">
+    <form>
+      <h1>Got Feedback?</h1>
+        <label for="trip">your trip:</label>
+       <input type="text" placeholder="Enter your trip.."></input>
+
+       <label for="comment">comment:</label>
+       <textarea placeholder="Leave a comment here..."></textarea>
+
+       
+       <button>Submit</button>
+    </form>
+    </div>
     </>
           )
 }
