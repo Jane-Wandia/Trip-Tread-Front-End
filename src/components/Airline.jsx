@@ -47,6 +47,7 @@ import Reviews from "./Reviews";
 
 import "./CSS/Airline.css";
 import { useState, useEffect } from "react";
+
 import AirlineCard from './AirlineCard';
 
 function Airline () {
@@ -61,6 +62,7 @@ function Airline () {
   return (
     <div className="airline-container">
       {airlines.map(airline => <AirlineCard airline={airline}/>)}
+
     </div>
   )
 }

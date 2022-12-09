@@ -1,114 +1,184 @@
 .button-26 {
-    appearance: button;
-    background-color: #1652F0;
-    border: 1px solid #1652F0;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-    font-size: 14px;
-    line-height: 1.15;
-    overflow: visible;
-    padding: 12px 16px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    transition: all 80ms ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: fit-content;
-    margin: 10px;
-  }
-  
-  .button-26:disabled {
-    opacity: .5;
-  }
-  
-  .button-26:focus {
-    outline: 0;
-  }
-  
-  .button-26:hover {
-    background-color: #0A46E4;
-    border-color: #0A46E4;
-  }
-  
-  .button-26:active {
-    background-color: #0039D7;
-    border-color: #0039D7;
-  }
-  
-  .secondary-container{
-      background-color: #3CB371;
-      width: 50vw;
-      position: relative;
-      left: 300px;
-      border: 1px solid;
-      padding: 10px;
-    /* box-shadow: 5px 10px #888888; */
-    
-  }
-  
-  .primary-container{
-    width: 90vw;
-    background-color: white;
-    position: relative;
-    left: 55px;
-    min-height: fit-content;
-    justify-content: center;
-   
+  align-items: center;
+  background-color: #0a66c2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+}
 
+.button-26:hover,
+.button-26:focus {
+  background-color: #16437e;
+  color: #ffffff;
+}
 
-  }
+.button-26:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
 
-  .input1{
-    width: 170px;
-    height: 50px;
-    position: relative;
-    /* bottom: 490px; */
-    background-color: #fff;
-  }
+.button-26:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
 
-  .form1{
-    /* background-color: #0A46E4; */
-    position: absolute;
-     bottom: 90px; 
-    width: 300px
-  }
+.secondary-container {
+  background-color: #1f71aa;
+  width: 50vw;
+  /* position: relative; */
+  left: 300px;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: black;
+  /* width: 30%; */
+  /* box-shadow: 5px 10px #888888; */
+}
+
+.primary-container {
+  display: flex;
+  flex-wrap: wrap;
   
+  justify-content: space-evenly;
   
-  
-  
-  #button-11 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6px 14px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-    border-radius: 6px;
-    border: none;
-    margin-top: 10px;
-  
-    color: #fff;
-    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
-     background-origin: border-box;
-    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 100px;
-    position: relative;
-    /* bottom: 490px; */
-    left: 6px; 
-  }
-  
-  #button-11:focus {
-    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-    outline: 0;
+}
+
+.myDiv{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+.myDiv form{
+   width: 40%;
+   text-align: center;
+   margin: 1rem;
+   padding: 1rem;
+   border: 2px solid #1f71aa;
+   border-radius: 10px;
+} */
+/* .myDiv form{
+  width: 40%;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #1f71aa;
+  border-radius: 10px;
+}
+
+form h1{
+  color: #1f71aa;
+}
+
+form label { 
+font-size: 1.2rem;
+}
+ 
+form input, textarea{
+width: 100%;
+height: 50px;
+margin: 4px;
+border:2px solid #1f71aa ;
+border-radius: 10px;
+padding: 10px 15px;
+font-size: 20px;
+transition: all .2s ease-in-out;
+}
+
+form input:focus, textarea:focus {
+  border: 3px solid #1f71aa;
+}
+
+form button{
+      margin-top: 5px;
+      border: none;
+      background-color: #1f71aa;
+      color: #fff;
+      padding: 10px 0;
+      width: 100%;
+      font-size: 20px;
+      font-size: 800;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: all .2s ease-in-out;
+}
+
+form button:hover {
+  transform: scale(1.05);
+} */
+
+.input1 {
+  width: 200px;
+  height: 50px;
+  /* bottom: 490px; */
+}
+
+.form1{
+    background-color: #1f71aa;
+    color: white;
   }
   
 
+#button-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  border: none;
+  margin-top: 10px;
 
-  
+  color: #fff;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  /* bottom: 490px; */
+}
+
+#button-11:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+.Container{
+  display: flex;
+  width: 100vw;
+}
+
+.reviews_container {
+  width: 30%;
+}

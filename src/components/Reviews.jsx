@@ -5,35 +5,34 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Airline from "./Airline";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function Reviews({user}) {
-  const [patch, setPatch] = useState({review : ""})
+function Reviews({ user }) {
+  const [patch, setPatch] = useState({ review: "" });
   const [editId, setEditId] = useState(0);
-  const [edit, setEdit] = useState(false)
+  const [edit, setEdit] = useState(false);
   const [reviews, setReviews] = useState([]);
   const [airline, setAirline] = useState({});
-  const location = useLocation()
-  const { airline_id } = location.state || {}
+  const location = useLocation();
+  const { airline_id } = location.state || {};
 
   function handleUpdate(e) {
-    e.preventDefault()
-    fetch(`/reviews/${editId}`,{
+    e.preventDefault();
+    fetch(`/reviews/${editId}`, {
       method: "PATCH",
       headers: {
-        'Content-type': 'application/json'
-      }, body: JSON.stringify(patch)
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(patch),
     })
-    .then((res) => res.json())
+      .then((res) => res.json())
       .then((data) => {
-        console.log(data)
-        console.log(user)
-        
-        setAirline(data)
+        console.log(data);
+        console.log(user);
+
+        setAirline(data);
         if (data.reviews !== undefined) {
-          
-          setReviews(data.reviews)
-        }
-        else {
-          setReviews([])
+          setReviews(data.reviews);
+        } else {
+          setReviews([]);
         }
       });
   }
@@ -52,10 +51,10 @@ function Reviews({user}) {
   //   .then((data) => {
   //     console.log(data)
   //     console.log(user)
-      
+
   //     setAirline(data)
   //     if (data.reviews !== undefined) {
-        
+
   //       setReviews(data.reviews)
   //     }
   //     else {
@@ -64,82 +63,102 @@ function Reviews({user}) {
   //   });
   // }
 
-
-
   useEffect(() => {
-    
     fetch(`/airlines/${airline_id}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
-        console.log(user)
-        
-        setAirline(data)
+        console.log(data);
+        console.log(user);
+
+        setAirline(data);
         if (data.reviews !== undefined) {
-          
-          setReviews(data.reviews)
-        }
-        else {
-          setReviews([])
+          setReviews(data.reviews);
+        } else {
+          setReviews([]);
         }
       });
-
-}, []);
+  }, []);
   return (
-    <>  
-        {reviews.map(
-          (review) => (
-            <div className="primary-container">
-            {user.fullname === review.user.fullname ? 
-            <>
-              <div className="secondary-container" key={review.id}>
-                
-                <h3>{review.user.fullname}</h3><h3>{review.user.fullname}</h3>
-                <h4>{review.trip}</h4>
-                <h5>{airline.name}</h5>
-                <p>{review.review}</p>
-                <button className="button-26" id={review.id}  onClick={(e)=>{ 
-              
-                  setEditId(e.target.id)
-                  setEdit(!edit)}}>
-                Edit
-                </button>
-                <button
-                  type="submit"
-                  className="button-26"
-                  onClick={() => {
-                  handleDelete(review.id);
-                }}
-                >
-                Delete
-                </button> 
-              </div>
-            
-          
-            {edit && (
-            <form className="form1">
-              <input placeholder="edit" name="review" className="input1" onChange={(e)=> setPatch({...patch, review:e.target.value})} value={patch.review}/>
-              <button id="button-11"onClick={handleUpdate}>Submit</button>
-            </form>)}
-          </>
-         
-          :
-          <>
-              <div className="secondary-container">
-                
-                <h3>{review.user.fullname}</h3><h3>{review.user.fullname}</h3>
-                <h4>{review.trip}</h4>
-                <h5>{airline.name}</h5>
-                <p>{review.review}</p>
-                 
-              </div>
-            
-          </>
-}
-          </div>))}
-    </>
-          )
+    <div className="Container">
+
+      <div className="reviews_container">
+        
+        {reviews.map((review) => (
+        
+          <div className="primary-container">
+            {user.fullname === review.user.fullname ? (
+              <>
+                <div className="secondary-container" key={review.id}>
+                  <h3>{review.user.fullname}</h3>
+                  <h3>{review.user.fullname}</h3>
+                  <h4>{review.trip}</h4>
+                  <h5>{airline.name}</h5>
+                  <p>{review.review}</p>
+                  <button
+                    className="button-26"
+                    id={review.id}
+                    onClick={(e) => {
+                      setEditId(e.target.id);
+                      setEdit(!edit);
+                    }}
+                  >
+                    Edit
+                  </button>
+                  <button
+                    type="submit"
+                    className="button-26"
+                    onClick={() => {
+                      handleDelete(review.id);
+                    }}
+                  >
+                    Delete
+                  </button>
+                </div>
+                {edit && (
+                  <form className="form1">
+                    <input
+                      placeholder="edit"
+                      name="review"
+                      className="input1"
+                      onChange={(e) =>
+                        setPatch({ ...patch, review: e.target.value })
+                      }
+                      value={patch.review}
+                    />
+                    <button id="button-11" onClick={handleUpdate}>
+                      Submit
+                    </button>
+                  </form>
+                )}
+              </>
+            ) : (
+              <>
+                <div className="secondary-container">
+                  <h3>{review.user.fullname}</h3>
+                  <h3>{review.user.fullname}</h3>
+                  <h4>{review.trip}</h4>
+                  <h5>{airline.name}</h5>
+                  <p>{review.review}</p>
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
+      <div className="myDiv">
+        <form>
+          <h1>Got Feedback?</h1>
+          <label for="trip">your trip:</label>
+          <input type="text" placeholder="Enter your trip.."></input>
+
+          <label for="comment">comment:</label>
+          <textarea placeholder="Leave a comment here..."></textarea>
+
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+  );
 }
 
-export default Reviews
-
+export default Reviews;
