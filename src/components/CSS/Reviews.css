@@ -64,7 +64,7 @@
   }
 
   .input1{
-    width: 1000px;
+    width: 170px;
     height: 50px;
     position: relative;
     /* bottom: 490px; */
@@ -72,9 +72,9 @@
   }
 
   .form1{
-    background-color: #0A46E4;
-    position: relative;
-    bottom: 1043px;
+    /* background-color: #0A46E4; */
+    position: absolute;
+     bottom: 90px; 
     width: 300px
   }
   
