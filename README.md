@@ -16,6 +16,10 @@ Trip Tread airline review website is an independent clients forum, which has bec
  
 6. Shantel Risper [Frontend Developer]
 
+# Navigation to APP
+
+->You should login/register once you navigate to our app to be directed to our homepage
+
 # Installing / Getting Started
 
 ## Built with
@@ -44,7 +48,7 @@ Clone this repository to your machine :
 
 One is able to go through our webpage , login/register.
 
-Also you will be able to make order of flights
+A user can only update or delete his/her own reviews.
 
 As a user you can make reviews, comment and also send us feedback
 
