@@ -12,7 +12,7 @@ function Reviews({user}) {
   const [reviews, setReviews] = useState([]);
   const [airline, setAirline] = useState({});
   const location = useLocation()
-  const { airline_id } = location.state
+  const { airline_id } = location.state || {}
 
   function handleUpdate(e) {
     e.preventDefault()
@@ -22,8 +22,7 @@ function Reviews({user}) {
         'Content-type': 'application/json'
       }, body: JSON.stringify(patch)
     })
-    .then(res => res.json())
-    .then(res => setReviews([...res]))
+    .then(getUpdates())
   }
 
   function handleDelete(id) {
@@ -31,6 +30,22 @@ function Reviews({user}) {
     setReviews((value) => value.filter((val) => id !== val.id));
     fetch(`/reviews/${id}`, {
       method: "DELETE",
+    });
+  }
+
+  function getUpdates() {
+    fetch(`/airlines/${airline_id}`)
+    .then((res) => res.json())
+    .then((data) => {
+      
+      setAirline(data)
+      if (data.reviews !== undefined) {
+        
+        setReviews(data.reviews)
+      }
+      else {
+        setReviews([])
+      }
     });
   }
 
@@ -62,7 +77,7 @@ function Reviews({user}) {
             <div className="primary-container">
             {user.fullname === review.user.fullname ? 
             <>
-              <div className="secondary-container">
+              <div className="secondary-container" key={review.id}>
                 
                 <h3>{review.user.fullname}</h3><h3>{review.user.fullname}</h3>
                 <h4>{review.trip}</h4>
@@ -87,8 +102,8 @@ function Reviews({user}) {
             
           
             {edit && (
-            <form class="form1">
-              <input placeholder="edit" name="review" class="input1" onChange={(e)=> setPatch({...patch, review:e.target.value})} value={patch.review}/>
+            <form className="form1">
+              <input placeholder="edit" name="review" className="input1" onChange={(e)=> setPatch({...patch, review:e.target.value})} value={patch.review}/>
               <button id="button-11"onClick={handleUpdate}>Submit</button>
             </form>)}
           </>
