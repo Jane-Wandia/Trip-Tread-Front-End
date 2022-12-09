@@ -35,7 +35,7 @@
 }
 
 .card:hover {
-  background-color:rgb(0, 73, 48);
+  background-color:#09223b;
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
