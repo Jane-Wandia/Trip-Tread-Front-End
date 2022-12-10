@@ -4,21 +4,27 @@ Trip Tread airline review website is an independent clients forum, which has bec
 
 # Authors 
 
-1. Jane Kigenyi [Scrum Master, Backend Developer]
+1. Jane Kigenyi  [Scrum Master, Backend Developer]
 
-2. Ronald Kipchirchir [Fronted Developer, Documentation]
+2. Ronald Kipchirchir  [Fronted Developer, Documentation]
 
-3. Cynthia Chelangat [Frontend Developer]
+3. Cynthia Chelangat  [Frontend Developer]
 
-4. Muriithi Kibata [Backend Developer]
+4. Muriithi Kibata  [Backend Developer]
 
-5. David Githonga [Backend Developer]
+5. David Githonga  [Backend Developer]
  
-6. Shantel Risper [Frontend Developer]
+6. Shantel Risper  [Frontend Developer]
 
 # Navigation to APP
 
 ->You should login/register once you navigate to our app to be directed to our homepage
+
+->After registration process click the airline button.
+
+->Then navigate to airline page where you will be able to add and edit your own reviews.
+
+->Ensure your server is working to be allowed access.
 
 # Installing / Getting Started
 
@@ -43,6 +49,8 @@ Clone this repository to your machine :
  git clone: [https://github.com/Jane-Wandia/Trip-Tread-Front-End](https://github.com/Jane-Wandia/Trip-Tread-Front-End)
 
  cd Trip-Tread-Front-End
+ 
+ [Backend link](https://trip-tread-production.up.railway.app/)
 
 # Interactivity with the user
 
