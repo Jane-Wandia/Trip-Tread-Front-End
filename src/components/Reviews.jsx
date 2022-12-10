@@ -190,7 +190,6 @@ const handleVisibility = (e) => {
               <>
                 <div className="secondary-container">
                   <h3>{review.user.fullname}</h3>
-                  <h3>{review.user.fullname}</h3>
                   <h4>{review.trip}</h4>
                   <h5>{airline.name}</h5>
                   <p>{review.review}</p>
