@@ -114,7 +114,7 @@ function Reviews({ user }) {
   
 }
 const handleVisibility = (e) => {
-  console.log(e.target.parentElement.childNodes[7].classList.remove('show_form'));
+  console.log(e.target.parentElement.childNodes[6].classList.remove('show_form'));
 }
 
   return (
