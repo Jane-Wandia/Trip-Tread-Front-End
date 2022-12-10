@@ -182,3 +182,7 @@ form button:hover {
 .reviews_container {
   width: 30%;
 }
+
+.show_form {
+  display: none;
+}
