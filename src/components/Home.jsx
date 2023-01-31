@@ -7,10 +7,10 @@ function Home(props) {
   return (
     <div className="hero-container">
       <div className="hero-image">
-        <img
+        {/* <img
           src="https://res.cloudinary.com/dphlf7a8o/image/upload/v1670491272/pexels-asad-photo-maldives-2245277_i0gbs2.jpg"
           alt="image tag"
-        />
+        /> */}
       </div>
       <div className="preview"></div>
       <div className="herosection-content">
